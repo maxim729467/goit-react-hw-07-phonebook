@@ -3,7 +3,9 @@ import * as actions from "Redux/actions";
 import { toast } from "react-toastify";
 
 const errorNotice = () =>
-  toast.error("The request couldn't be processed. Please try again.");
+  toast.error(
+    "The request couldn't be processed. Some server issue has occured."
+  );
 
 export const fetchContacts = () => (dispatch) => {
   dispatch(actions.fetchContactsRequest());
